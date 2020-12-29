@@ -1,5 +1,5 @@
 G91                               ; Set relative positioning
-G1 Z40                            ; Move hotend away from part by 40mm
+G1 Z20                            ; Move hotend away from part by 20mm
 M84                               ; Disable motors
 {% snippet 'disable_hotends' %}   ; Disable hotend heater
 {% snippet 'disable_bed' %}       ; Disable bed header
