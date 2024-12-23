@@ -6,8 +6,8 @@ M221 S100 ; reset flow
 M900 K0 ; reset LA
 ; ooze avoidance
 M83 ; relative extrusion
-M106 S255 ; part fan to full to blow it away
 G1 E10 F10 ; extrude some
+M106 S255 ; part fan to full to blow it away
 G4 20000 ; wait 20 seconds
 {if print_settings_id=~/.*(DETAIL @MK3|QUALITY @MK3|@0.25 nozzle MK3).*/}M907 E538 ; reset extruder motor current{endif}
 M104 S0 ; turn off temperature
